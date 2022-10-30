@@ -20,6 +20,9 @@
 }
 
 html {
+    /* width: 1600px;
+    margin-right: auto;
+    margin-left: auto; */
     box-sizing: border-box;
 }
 
@@ -191,14 +194,30 @@ color: var(--accent-color);
 
     /* hero */
 }
-.hero {
+
+.overlay {
+    max-width: 1600px;
     height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+     background-image:
+     linear-gradient( 
+     to right,
+     rgba(47, 48, 58, 0.4),
+     rgba(47, 48, 58, 0.4)),
+     url('../images/backgroundhero.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-color: #C4C4C4;
+}
+
+.hero {
         margin: 0 auto;
         padding-top: 200px;
         padding-bottom: 200px;
     /* outline: 1px solid red; */
-
-    background-color: var(--fourth-background-color);
+   
     text-align: center;
    
 }
@@ -239,6 +258,7 @@ color: var(--accent-color);
     
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
             border-radius: 4px;
+            border: transparent;
 
 
 
@@ -282,11 +302,43 @@ background: var(--background-color);
     
  }
 
+ .features-item::before {
+    display: block;
+    content: '';
+    height: 120px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--third-background-color);
+    border-radius: 4px;
+
+ }
+
+ .icon-antenna::before {
+    background-size: 70px;
+    background-image: url(../images/antenna.svg);
+ }
+
+ .icon-clock::before {
+    background-size: 70px;
+    background-image: url(../images/clock.svg);
+ }
+
+ .icon-diagram::before {
+    background-size: 70px;
+    background-image: url(../images/diagram.svg);
+ }
+
+ .icon-astronaut::before {
+    background-size: 70px;
+    background-image: url(../images/astronaut.svg);
+ }
  .features-list .features-item + .features-item {
     margin-left: 30px;
  }
 
 .features .title {
+    margin-top: 30px;
    
         font-weight: 700;
         
@@ -634,4 +686,7 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
     flex-basis: calc(100% / 3 - var(--card-set-gap));
     margin-top: var(--card-set-gap);
     margin-left: var(--card-set-gap);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+     0px 4px 4px rgba(0, 0, 0, 0.06), 
+     1px 4px 6px rgba(0, 0, 0, 0.16);
  }
