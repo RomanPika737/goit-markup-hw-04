@@ -153,7 +153,7 @@ margin-right: 50px;
 }
 
 .site-nav .link:hover, 
-.site-nav .link:focus {
+ .link:focus {
 color: var(--accent-color);
 }
 
@@ -163,6 +163,9 @@ color: var(--accent-color);
 
 .contacts-header {
     display: flex;
+    /* padding: 0;
+    margin: 0; */
+    /* align-items: center; */
     /* width: 307px; */
     /* justify-content: space-between; */
    /* margin-left: 344px; */
@@ -173,11 +176,16 @@ color: var(--accent-color);
 }
 
 .mail-tel {
+    display: flex;
     margin-left: auto;
 }
 
-.contacts-header  .link {
+.contacts-header .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 10px 0;
+    fill: var(--main-text-color);
     color: var(--main-text-color);
     text-decoration: none;
     font-weight: 500;
@@ -185,10 +193,23 @@ color: var(--accent-color);
     letter-spacing: 0.02em;
 
 }
+.contacts-header .mail-icon {
+    display: block;
+    text-decoration: none;
+    margin-right: 10px;
+
+}
 .contacts-header .link:hover,
 .contacts-header .link:focus {
 color: var(--accent-color);
+fill: var(--accent-color);
+
 }
+/* 
+.contacts-header .mail-icon:hover, 
+.mail-icon:focus {
+fill: var(--accent-color);
+} */
 /* Main */
 .maim {
 
@@ -496,9 +517,11 @@ display: block;
     height: 20px;
 }
 
-.social-link .link:hover, .link:focus {
+.social-link .link:hover, 
+.social-link .link:focus {
     fill: #FFFFFF;
     background-color: #2196F3 ;
+    border-radius: 50%;
 }
 /* Regular clients */
 
@@ -558,10 +581,19 @@ display: block;
     padding-bottom: 60px;
     background: var(--fourth-background-color);
 }
-
+ .footer .container {
+    display: flex;
+    align-items: center;
+ }
 
 .address-footer {
+
+    margin-right: 70px;
+}
+
+.address-footer .address {
     margin-top: 20px;
+   
 }
 
 .links .link{
@@ -596,8 +628,33 @@ display: block;
 }
 
 .text-logo1 {
+
         color: var(--background-color);
 }
+
+.footer-social {
+    margin-bottom: 20px;
+    font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+    
+        color: #FFFFFF;
+}
+
+.footer-social-links {
+   
+    width: 206px;
+    height: 80px;
+}
+.footer-social-links .footer-link{
+    fill: #FFFFFF;
+}
+.footer-link {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
 
            /* PORTFOLIO PAGE */
 
