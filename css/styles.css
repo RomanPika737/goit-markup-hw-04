@@ -318,9 +318,6 @@ background: var(--background-color);
 
  .features-list {
     display: flex;
-    /* justify-content: space-between; */
-    /* margin-right: auto;
-    margin-left: auto; */
  }
 
  .features-item {
@@ -446,7 +443,6 @@ display: block;
     /* justify-content: space-between; */
 
     /* outline: 1px solid red; */
-    /* margin-top: 50px; */
 }
 
 .card {
