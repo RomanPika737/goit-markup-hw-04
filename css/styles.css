@@ -187,7 +187,7 @@ color: var(--accent-color);
     justify-content: center;
     align-items: center;
     padding: 10px 0;
-    fill: var(--main-text-color);
+    /* fill: var(--main-text-color); */
     color: var(--main-text-color);
     text-decoration: none;
     font-weight: 500;
@@ -199,12 +199,13 @@ color: var(--accent-color);
     display: block;
     text-decoration: none;
     margin-right: 10px;
+    fill: currentColor;
 
 }
 .contacts-header .link:hover,
 .contacts-header .link:focus {
 color: var(--accent-color);
-fill: var(--accent-color);
+/* fill: var(--accent-color); */
 
 }
 /* 
@@ -212,10 +213,11 @@ fill: var(--accent-color);
 .mail-icon:focus {
 fill: var(--accent-color);
 } */
-/* Main */
+
+/* ---Main--- */
 .maim {
 
-    /* hero */
+    /* Hero */
 }
 
 .overlay {
